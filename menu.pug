@@ -1,0 +1,20 @@
+mixin menu(title)
+    .name 
+        h3 КИНОКОМПАНИИ
+    if title == 'Главная'
+        .menu1.curr
+            a(href="#") Главная
+    else 
+        .menu1
+            a(href="index.html") Главная
+
+    if title == 'Список'
+        .menu2.curr
+            a(href="#") Список
+    else 
+        .menu2
+            a(href="list.html") Список
+    .menu3 
+        a(href="#") Фильмы
+    .menu4 
+        a(href="#") История

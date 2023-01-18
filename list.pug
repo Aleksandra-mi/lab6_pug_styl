@@ -1,0 +1,223 @@
+extends temp 
+block variables 
+    - var title = 'Список'
+block content
+    .t2-1
+        details 
+            summary Сортировка
+            br
+            span 1 уровень:
+            select(name="s1")
+                option(value="0") Нет
+                option(value="1") Название
+                option(value="2") Страна
+                option(value="3") Основатель
+                option(value="4") Год основания
+            br
+            br
+            span 2 уровень:
+            select(name="s2")
+                option(value="0") Нет
+                option(value="1") Название
+                option(value="2") Страна
+                option(value="3") Основатель
+                option(value="4") Год основания
+            br
+            br
+            span 3 уровень:
+            select(name="s3")
+                option(value="0") Нет
+                option(value="1") Название
+                option(value="2") Страна
+                option(value="3") Основатель
+                option(value="4") Год основания
+            br
+            br
+            input(type="button" value="Применить")
+    .t2-2 
+        details 
+            summary Фильтр
+            br
+            label Название:
+            input(type="text" name="name" size="10")
+            br
+            br
+            label Страна:
+            input(type="text" name="country" size="10")
+            br
+            br
+            label Основатель:
+            input(type="text" name="person" size="10")
+            br
+            br
+            label Год основания:
+            input(type="text" name="year" size="10")
+            br
+            br
+            input(type="button" value="Применить")
+    .t2-3 
+        details 
+            summary График
+            br
+            label OX:
+            br  
+            input(type="radio" name="n1") 
+            span Страна
+            br
+            input(type="radio" name="n1") 
+            span Год основания
+            br
+            br
+            label OY:
+            br  
+            input(type="radio" name="n2") 
+            span Кол-во проектов 
+            br
+            br
+            input(type="button" value="Построить")
+    .table
+        table(border="1" align="justify" cellspacing="0" cellpadding="5")
+            tr
+                td №
+                td Название
+                td Страна
+                td Основатель
+                td Год основания
+                td Количество проектов
+                td Самый популярный проект
+            tr
+                td 1
+                td 20th Century Fox
+                td США
+                td Уильям Фокс
+                td 1935
+                td 1566
+                td Звездные войны
+            tr
+                td 2
+                td A24
+                td США
+                td Дэниэл Кац
+                td 2012
+                td 81
+                td Лобстер
+            tr
+                td 3
+                td Alcon Entertainment
+                td США
+                td Бродерик Джонсон
+                td 1997
+                td 67
+                td Невидимая сторона
+            tr
+                td 4
+                td Amblin Entertainment
+                td США
+                td Стивен Спилберг
+                td 1981
+                td 178
+                td На западном фронте без перемен
+            tr
+                td 5
+                td Bad Robot Productions
+                td США
+                td Джей Джей Абрамс
+                td 1998
+                td 84
+                td Остаться в живых
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме
+            tr
+                td 6
+                td BBC Films
+                td Великобритания
+                td Дэвид М Томпсон
+                td 1990
+                td 363
+                td Мальчик в полосатой пижаме

@@ -1,0 +1,163 @@
+style-grid(num1, num2)
+	grid-column num1
+	grid-row num2
+
+style-grid-big(num1, num2, num3, num4)
+	grid-column num1 / span num2
+	grid-row num3 / span num4
+
+body
+	margin 0px
+	font-size 14px
+	font-family arial
+	h3
+		text-align center
+		line-height 1
+		color grey
+	h4
+		line-height 0
+		text-align center
+	p
+		line-height 1.5
+		word-spacing 0.3em
+		word-wrap break-word
+	.container
+		//background-color LightGrey
+		overflow hidden
+		display grid
+		width 100%
+		min-width 550px
+		grid-template-rows auto
+		grid-template-columns repeat(8, 1fr)
+
+		div
+			//background-color white
+			overflow hidden
+			box-sizing border-box
+		a
+			text-decoration none
+			font-weight bold
+			color black
+		img 
+			height 100%
+			width 100%
+		.curr
+			a
+				color purple
+		
+		.name
+			style-grid-big(1, 2, 1, 1)
+		.menu1
+			a 
+				line-height 3.5
+			&:hover
+				a
+					color purple
+			text-align center
+			style-grid-big(3, 1, 1, 1)
+		.menu2
+			a 
+				line-height 3.5
+			&:hover
+				a
+					color purple
+			text-align center
+			style-grid-big(4, 1, 1, 1)
+		.menu3
+			a 
+				line-height 3.5
+			&:hover
+				a
+					color purple
+			text-align center
+			style-grid-big(5, 1, 1, 1)
+		.menu4
+			a 
+				line-height 3.5
+			&:hover
+				a
+					color purple
+			text-align center
+			style-grid-big(6, 1, 1, 1)
+		
+		.gal
+			//margin 0px 0px 10px 0px
+			border-bottom solid LightGrey 10px
+			style-grid-big(1, 8, 2, 1)
+			&:hover
+				img
+					width 105%
+		.p1-1
+			//margin 0px 5px 0px 10px
+			border-left solid LightGrey 10px
+			border-right solid LightGrey 10px
+			background-color LightGrey
+			style-grid-big(1, 2, 3, 1)
+		.p1-2
+			//margin 0px 5px 0px 5px
+			border-right solid LightGrey 10px
+			style-grid-big(3, 2, 3, 1)
+		.p1-3
+			//margin 0px 5px 0px 5px
+			border-right solid LightGrey 10px
+			style-grid-big(5, 2, 3, 1)
+		.p1-4
+			//margin 0px 10px 0px 5px
+			border-right solid LightGrey 10px
+			style-grid-big(7, 2, 3, 1)
+		.t1-1
+			//margin 0px 5px 0px 10px
+			border-left solid LightGrey 10px
+			border-right solid LightGrey 10px
+			border-bottom solid LightGrey 10px
+			style-grid-big(1, 2, 4, 1)
+		.t1-2
+			//margin 0px 5px 0px 5px
+			border-right solid LightGrey 10px
+			border-bottom solid LightGrey 10px
+			style-grid-big(3, 2, 4, 1)
+		.t1-3
+			//margin 0px 5px 0px 5px
+			border-right solid LightGrey 10px
+			border-bottom solid LightGrey 10px
+			style-grid-big(5, 2, 4, 1)
+		.t1-4
+			//margin 0px 10px 0px 5px
+			border-right solid LightGrey 10px
+			border-bottom solid LightGrey 10px
+			style-grid-big(7, 2, 4, 1)
+
+		.t2-1
+			background-color LightGrey
+			padding 10px 20%
+			style-grid-big(1, 8, 2, 1)
+		.t2-2
+			background-color LightGrey
+			padding 10px 20%
+			style-grid-big(1, 8, 3, 1)
+		.t2-3
+			background-color LightGrey
+			padding 10px 20%
+			style-grid-big(1, 8, 4, 1)
+		.table
+			background-color LightGrey
+			padding 10px 20%
+			style-grid-big(1, 8, 5, 1)
+			
+		
+
+		.name3
+			style-grid-big(1, 8, 2, 1)
+			background-color LightGrey
+			padding 10px 20%
+			//text-align center
+		.p3-1
+			padding 0 20%
+			background-color LightGrey
+			style-grid-big(1, 8, 3, 1)
+		.t3-1
+			padding 0 20%
+			background-color LightGrey
+			style-grid-big(1, 8, 4, 1)
+
+	@import media
